@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "logs",
+  "info": {
+    "name": "Log",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "note": {
+      "type": "string"
+    },
+    "price": {
+      "type": "integer"
+    },
+    "reservations_end": {
+      "type": "datetime"
+    },
+    "computer": {
+      "via": "logs",
+      "model": "computer"
+    },
+    "reservations_start": {
+      "type": "datetime"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "registers",
+  "info": {
+    "name": "register",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "feed": {
+      "model": "feed",
+      "via": "registers"
+    },
+    "TeamName": {
+      "type": "string"
+    },
+    "members": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    }
+  }
+}

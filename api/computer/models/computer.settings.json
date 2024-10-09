@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "computers",
+  "info": {
+    "name": "Computer",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "logs": {
+      "via": "computer",
+      "collection": "log"
+    },
+    "current_log": {
+      "model": "log"
+    }
+  }
+}
